@@ -1,0 +1,410 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header nav{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.logo a{
+     font-size: 20px;
+     color: navy;
+}
+
+.nav-links{
+     display: flex;
+     margin-left: auto;
+}
+
+.nav-links li{
+      padding: 10px;
+}
+
+.nav-links a{
+     color: black;
+}
+
+li{
+     list-style: none;
+}
+
+a{
+     text-decoration: none;
+}
+
+.container{
+     max-width: 100%;
+     width:950px;
+     margin: 0 auto;
+     padding: 0 15px;
+}
+
+.bigcontainer{
+     max-width: 100%;
+     width:1350;
+     margin:0 auto;
+     padding: 0 15px;
+}
+
+.home img, .about img{
+     max-width: 30%;
+}
+
+/* home */
+
+.row{
+     display: flex;
+     flex-wrap: wrap;
+     margin: 0 -15px;
+}
+
+.col60{
+     max-width: 60%;
+     flex:0 0 60%;
+     padding: 0 15px;
+}
+
+.col40{
+     max-width: 40%;
+     flex: 0 0 40%;
+     padding: 0 15px;
+}
+
+.home{
+     background: linear-gradient(rgb(60, 60, 237), pink);
+     padding: 50px;
+}
+
+.content1{
+     margin-top: 60px;
+}
+
+.content1 h2{
+      font-size: 30px;
+}
+
+.content2 img{
+     border-radius: 20px;
+   
+}
+
+
+
+.contactbtn{
+      margin-top: 30px;
+}
+
+.contactbtn .cmn-btn{
+       display: inline-block;
+       background: rgb(231, 55, 84);
+       color: #fff;
+       padding: 10px 19px;
+       border-radius: 8px;
+       transition: 0.3s ease-in;
+}
+
+.contactbtn .cmn-btn:hover{
+      background: rgb(223, 98, 119);
+}
+
+/* about */
+
+.about {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  padding: 80px 0 100px;
+  background-color: #ffffff;
+}
+
+
+
+.about .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.about span{
+       font-size: 29px;
+}
+
+/* Balanced column widths (flipped from 40/60 to give your text better breathing room) */
+.about .col30 {
+  max-width: 30%;
+  flex: 0 0 30%;
+  padding: 0 15px;
+}
+
+.col70{
+     max-width: 70%;
+     flex: 0 0 70%;
+     padding: 0 15px;
+}
+
+/* Image Card Styling */
+/* Text Styling */
+.about2 .greeting {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #3f3d9e;
+  background-color: #eef2ff;
+  padding: 5px 14px;
+  border-radius: 50px;
+  margin-bottom: 12px;
+}
+
+.about2 h3 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #3f3d9e;
+  line-height: 1.15;
+  margin: 0 0 6px 0;
+}
+
+.about2 .role {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 18px 0;
+}
+
+.about2 p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #475569;
+  margin: 0 0 24px 0;
+}
+
+/* Tech Stack Pills */
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 30px;
+}
+
+.skill-tags span {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #334155;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 6px 14px;
+  border-radius: 50px;
+}
+
+/* CTA Buttons */
+.about-btns {
+  display: flex;
+  gap: 14px;
+}
+
+.about-btns a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 12px 26px;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+.btn-primary {
+  background-color: #3f3d9e;
+  color: #ffffff;
+  border: 2px solid #3f3d9e;
+}
+
+.btn-primary:hover {
+  background-color: #2e2c7a;
+  border-color: #2e2c7a;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #3f3d9e;
+  border: 2px solid #3f3d9e;
+}
+
+.btn-outline:hover {
+  background-color: #eef2ff;
+  transform: translateY(-2px);
+}
+
+/* Image Card Styling */
+.about1 .img-frame {
+  width: 290px;
+  height: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: linear-gradient(145deg, #eef2ff, #e0e7ff);
+  box-shadow: 0 20px 40px rgba(63, 61, 158, 0.14);
+  border: 4px solid #ffffff;
+}
+
+.about1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  display: block;
+}
+
+.about1 img{
+       max-width: 100%;
+       border-radius: 20%;
+}
+
+/* Responsive Mobile View */
+@media (max-width: 768px) {
+ 
+
+  .about2 h3 {
+    font-size: 2.2rem;
+  }
+
+  .skill-tags,
+  .about-btns {
+    justify-content: center;
+  }
+
+
+}
+
+
+/* skills */
+
+.skills h3{
+     text-align: center;
+     font-size: 40px;
+}
+
+.links li{
+     padding: 10px;
+}
+
+/* skills */
+
+.skills{
+     padding: 20px;
+}
+
+.skillsimg img{
+       max-width: 100%;
+       height: 400px;
+       border-radius: 20px;
+}
+
+/* contact */
+
+.contact{
+    padding: 20px;
+    text-align: center;
+}
+
+.contact h2{
+     text-decoration: underline;
+      font-size: 30px;
+      margin-bottom: 20px;
+      color: rgb(159, 32, 53);
+}
+
+/* footer */
+
+footer{
+     background: rgb(16, 16, 16);
+     padding: 20px;
+     color: #fff;
+     text-align: center;
+}
+
+.footerlinks{
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      padding: 12px;
+}
+
+.footerlinks i{
+       text-align: center;
+      color: #fff;
+       align-items: center;
+       /* padding: 12px; */
+}
+
+.hamburger{
+       display: none;
+}
+
+
+
+/* responsive */
+
+
+@media(max-width:991px){
+
+     .nav-links{
+           display: flex;
+            flex-direction: column;
+            position: absolute;
+            top:20px;
+            right:40px;
+            background: rgba(4, 4, 98, 0.547);
+            opacity: 0;
+            /* z-index: 1; */
+            transition: 0.3s ease-in;
+            padding: 10px 18px;
+            border-radius: 5px;
+     }
+
+     .about-btns, .skill-tags{
+            display: flex;
+            justify-content: center;
+     }
+
+     .nav-links a{
+            color: #fff;
+     }
+
+     .hamburger{
+            display: block;
+            position: absolute;
+            right:20px;
+            cursor: pointer;
+     }
+
+     .nav-links.show{
+            opacity: 1;
+     }
+
+     .show{
+           display: flex;
+     }
+
+    .home, .about{
+          text-align: center;
+    }
+
+    .content1 .cmn-btn{
+         margin-bottom: 10px;
+    }
+        .col60, .col70{
+             max-width: 100%;
+             flex: 0 0 100%;
+        }
+
+        .about1 img{
+             max-width: 100%;
+             text-align: center;
+        }
+
+        .col40, .col30{
+             max-width: 100%;
+             flex: 0 0 100%;
+        }
+}
+
